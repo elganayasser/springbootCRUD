@@ -2,28 +2,14 @@
 <!DOCTYPE html>
 <html>
 <head><title>SpringBoot</title>
-<style>
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
+<link href="https://unpkg.com/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-</style>
 </head>
 <body>
-
-<table>
-  <tr>
+<div class="container"> 
+<h1 class="display-1">Spring Boot simple CRUD </h1>
+<table class="table table-striped table-bordered">
+  <tr class="thead-dark" >
     <th>ID</th>
     <td>${lists.id}</td>
   </tr>
@@ -37,5 +23,6 @@ tr:nth-child(even) {
       </tr>
   </table>
   <a href="/">Back</a>
+  </div>
 </body>
 </html>
